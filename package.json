@@ -1,0 +1,12 @@
+{
+  "name": "js-post-method-neutro",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./js/main.js",
+  "scripts": {
+    "server": "json-server --watch server/db.json",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To DO List - Fake App</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" type="module"></script>
+</head>
+<body>
+    <header class="navbar">
+        <section class="container-navbar">
+            <div class="logo">
+                <span class="logo-text">tDOl</span>
+            </div>
+        </section>
+    </header>
+    <section class="main">
+        <h1>to DO list</h1>
+        <section class="todolistContainer">
+            <form name="todolist" class="formTDL">
+                <div class="info-input">
+                    <div class="container-input">
+                        <input type="text" name="taskName" placeholder="Scrivi qui..." autocomplete="off" required />
+                        <button type="submit" class="btn-submit">
+                            <img src="./assets/plusicon.png" alt="icona +">
+                        </button>
+                    </div>
+                </div>
+            </form>
+            
+            <form name="formEditPatch" class="formEdit">
+                <div class="info-editForm">
+                    <input type="text" name="nameTask" placeholder="Scrivi qui..." required/>
+                    <input type="text" name="idTask" placeholder="ID to DO list..." class="btnidTask"/>
+                    <button type="submit" value="Modifica" class="btnEditDone"><img src="./assets/check.png" alt="icona modifica eseguita" class="imgBtnEditDone"></button>
+                </div>
+            </form>
+        </section>
+        
+        <div class="container-card"></div>
+    </section>
+    <footer>Made with ❤️ by Giulio Simone Floresta</footer>
+</body>
+</html>

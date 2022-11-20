@@ -1,0 +1,12 @@
+/*
+*** (e) -> parametro assegnato per monitorare gli eventi
+*** e.preventDefault(); -> metodo per bloccare il refresh della pagina
+*** la funzione formTask.addEventListener consiste nell'inizializzare al click del submit
+    una nuova variabile "data" (oggetto) a cui vengono assegnati i valori degli input
+
+    METODO POST 
+*** all'interno del fetch inseriamo come parametri l'url dell'API e un oggetto contenente:
+*** il metodo, in questo caso POST
+*** le headers che vanno a specificare all'interno della richiesta da mandare al server la tipologia di dati da inviare
+*** il body per serializzare i dati, in questo caso l'oggetto "data"
+*/

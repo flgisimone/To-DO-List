@@ -1,0 +1,312 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Asap", sans-serif;
+}
+
+body{
+    height: 100%;
+    border: 3px solid #5A95FF;
+}
+
+h1{
+    font-size: 35px;
+    color: #5A95FF;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.navbar{
+    background-color: #5A95FF;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    width: 100%;
+}
+
+.container-navbar{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0;
+    color: white;
+    font-weight: bold;
+}
+
+.logo .logo-text{
+    font-size: 25px;
+}
+
+.main{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 50px 0;
+}
+
+.todolistContainer{
+    display: flex;
+    flex-direction: column;
+}
+
+.show-input .insert-task{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    margin: 50px 0;
+    background: #5A95FF;
+    color: white;
+    padding: 8px 20px;
+    border: none;
+    border: 2px solid #5A95FF;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+.formTDL{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    background-color: #5a95ff;
+    border-radius: 10px;
+    gap: 30px;
+}
+
+.container-input{
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.info-input{
+    width: 90%;
+    border-radius: 10px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.container-input input{
+    width: 240px;
+    display: flex;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    border: white;
+    color: #5a95ff;
+    font-weight: bold;
+    outline: none;
+    font-size: 16px;
+    padding: 0 10px;
+}
+
+input::placeholder{
+    color: grey;
+    font-weight: 500;
+}
+
+.btn-submit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}
+
+.btn-submit img{
+    width: 45px;
+    cursor: pointer;
+}
+
+.container-card{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 30px;
+    height: 273px;
+    overflow-y: hidden;
+    overflow-y: scroll;
+    box-shadow: 0 0 10px #5A95FF;
+    padding: 15px 0;
+    position: relative;
+}
+
+.container-card::-webkit-scrollbar{
+    display: block;
+    background-color: #5A95FF;
+    width: 5px;
+}
+
+.container-card::-webkit-scrollbar-track-piece {
+    background: lightgrey;
+}
+.container-card::-webkit-scrollbar-thumb {
+    background: #5a95ff;
+}
+
+.textContanerEmpy{
+    width: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    color:#5A95FF;
+    opacity: 0.6;
+    font-size: 25px;
+    text-align: center;
+}
+
+.cointainerTask{
+    width: 290px;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cardTask{
+    width: 310px;
+    border: 2px solid #5a95ff;
+    padding: 10px 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    align-self: center;
+}
+
+.taskContent{
+    font-size: 14px;
+    width: 200px;
+    font-weight: 500;
+}
+
+.containerBtn{
+    display: flex;
+    gap: 15px;
+}
+
+.btnEdit,
+.btnDel,
+.btnOpenMenu,
+.btnClosenMenu,
+.btnEditDone{
+    display: flex;
+    background-color: transparent;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+.imgBtnEdit,
+.imgBtnDel,
+.imgBtnOpenMenu,
+.imgBtnCloseMenu,
+.imgBtnEditDone{
+    display: flex;
+    width: 23px;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnEdit,
+.btnDel,
+.btnClosenMenu{
+    display: none;
+}
+
+.completedlistContainer{
+    width: 90%;
+    margin: auto;
+    min-height: 100px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: #18b724;
+    border-radius: 10px;
+}
+
+.formEdit{
+    width: 300px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 0 0 0;
+    gap: 30px;
+    outline: none;
+    display: none;
+}
+
+.info-editForm{
+    width: 290px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.info-editForm input{
+    width: 250px;
+    border: none;
+    font-size: 14px;
+    font-weight: 500;
+    border: 2px solid #18b724;
+    padding: 6px 10px;
+    border-radius: 10px;
+    background-color: white;
+    outline: none;
+}
+
+.info-editForm .textConfermEdit{
+    margin-top: 15px;
+    padding-bottom: 5px;
+    color: red;
+    font-weight: bold;
+    border-bottom: 1px solid red;
+}
+
+.btnidTask{
+    display: none;
+}
+
+.containerEmpty{
+    width: 84.6%;
+    margin: auto;
+}
+
+footer{
+    background-color: #5A95FF;
+    padding: 15px 0;
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    width: 100%;
+}
+
